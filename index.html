@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Currency Converter</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="line"></div>
+        <div class="content">
+            <div class="top">
+                <p class="title">Exchange Rate</p>
+                <div class="rateNum" id="result">
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="input-section" id="input-section">
+                <p>Amount</p>
+                <input type="number" id="from">
+            </div>
+            <div class="exchange-section">
+                <div class="from-sec">
+                    <p>From</p>
+                    <select name="" id="base">
+                    <option value="USD">USD</option>
+                    <option value="SLSH">SLSH</option>
+                </select>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-exchange-alt fa-2x"></i>
+                </div>
+                <div class="to-sec">
+                    <p>To</p>
+                    <select name="" id="second">
+                    <option value="USD">USD</option>
+                    <option value="SLSH">SLSH</option>
+                </select>
+                </div>
+            </div>
+            <footer>
+                <button id="convert">Convert</button>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
